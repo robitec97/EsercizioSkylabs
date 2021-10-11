@@ -14,6 +14,7 @@ namespace EsercizioSkylabs.Models
         }
 
         public DbSet<RecordsDenormalized> RecordsDenormalized { get; set; }
+        public DbSet<Records> Records { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -21,6 +22,10 @@ namespace EsercizioSkylabs.Models
             builder
                 .Entity<RecordsDenormalized>()
                 .ToView("records_denormalized")
+                .HasKey(t => t.id);
+            builder
+                .Entity<Records>()
+                .ToTable("records")
                 .HasKey(t => t.id);
         }
     }

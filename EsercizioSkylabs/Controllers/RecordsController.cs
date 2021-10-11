@@ -23,14 +23,14 @@ namespace EsercizioSkylabs.Controllers
         }
 
 
-        [HttpGet("{offset}/{count}")]
+        [HttpGet("{offset}/{count}")] //ritorno dei record normalizzati con offset e count
         public async Task<IEnumerable<RecordsDenormalized>> GetRecordsDenormalized(int offset, int count)
         {
             return await _repository.GetRecords(offset, count);
         }
 
         [HttpGet]
-        public ActionResult Download()
+        public ActionResult Download() //download del file .csv
         {
             List<RecordsDenormalized> recordsToDownload = (List<RecordsDenormalized>)_repository.GetAllRecords();
             var cc = new CsvConfiguration(new System.Globalization.CultureInfo("en-US"));
@@ -46,6 +46,6 @@ namespace EsercizioSkylabs.Controllers
                 }
             }
 
-            }
+        }
     }
 }
