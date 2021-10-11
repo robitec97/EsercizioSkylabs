@@ -16,5 +16,5 @@ NB: Utilizzare il Db già presente nella cartella e non quello fornito originari
 E' possibile anche trovare il file "Soluzioni Pillitteri.pdf" dove vi sono le mie risposte agli esercizi teorici (e risposte alle domande).
 
 Nuget Packes utilizzati: 
-*Microsoft.EntityFrameworkCore.Sqlite
-*CsvHelper
+- Microsoft.EntityFrameworkCore.Sqlite
+- CsvHelper
