@@ -14,3 +14,7 @@ di entityframework, per questo è stato necessario mappare anche Records, e che 
 
 NB: Utilizzare il Db già presente nella cartella e non quello fornito originariamente in quanto non dispone della vista.
 E' possibile anche trovare il file "Soluzioni Pillitteri.pdf" dove vi sono le mie risposte agli esercizi teorici (e risposte alle domande).
+
+Nuget Packes utilizzati: 
+-Microsoft.EntityFrameworkCore.Sqlite
+-CsvHelper
