@@ -12,3 +12,5 @@ denormalizzati, essendo questi ultimi già ordinati per id la paginazione viene 
 StatsController che espone la route /stats/{aggregationType}/{aggregationFilter} che ritorna le statistiche secondo documentazione, eseguendo delle query tramite LINQ sul dbcontext
 di entityframework, per questo è stato necessario mappare anche Records, e che mette i dati in una classe di appoggio Stats e ritorna tutto.
 
+NB: Utilizzare il Db già presente nella cartella e non quello fornito originariamente in quanto non dispone della vista.
+E' possibile anche trovare il file "Soluzioni Pillitteri.pdf" dove vi sono le mie risposte agli esercizi teorici (e risposte alle domande).
